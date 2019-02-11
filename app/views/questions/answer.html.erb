@@ -1,0 +1,22 @@
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+<div id="container">
+  <div id="form">
+    <h1>Stupid Coaching</h1>
+    <form action="/answer" method="get">
+      <p>What's up?</p>
+      <input type="text" name="question">
+      <input type="submit" value="Ask!">
+    </form>
+  </div>
+
+  <div id="answer">
+   <p><%= @answer  %></p>
+  </div>
+</div>
+</body>
+<%= link_to "Ask your question", answer_path %>
